@@ -225,7 +225,7 @@
       <xsl:if test="$debug">
         <xsl:message>Iteration: <xsl:value-of select="."/>/<xsl:value-of select="count($collection)"
           /></xsl:message>
-        <xsl:message>Current: <xsl:value-of select="$collection[current()]"/>"/></xsl:message>
+        <xsl:message>Current: <xsl:copy-of select="$collection[current()]"/></xsl:message>
       </xsl:if>
       <xsl:next-iteration>
         <xsl:with-param name="acc" select="$body($collection[current()], $acc)"/>
@@ -399,9 +399,9 @@
     <doc:return>A member of <doc:i>collection</doc:i> satisfying <doc:i>body</doc:i>, if such an element
       exists, an empty sequence otherwise. </doc:return>
   </doc:doc>
-  <xsl:function name="oclX:any" as="item()">
+  <xsl:function name="oclX:any" as="item()*">
     <xsl:param name="collection" as="item()*"/>
-    <xsl:param name="body" as="function(item()) as item()"/>
+    <xsl:param name="body" as="function(item()) as xs:boolean"/>
 
     <xsl:variable name="satisfyingItems" as="item()*">
       <xsl:sequence
@@ -412,7 +412,7 @@
         }
         )"
       />
-    </xsl:variable>
+    </xsl:variable>    
     <xsl:sequence select="if (count($satisfyingItems) ge 1) then $satisfyingItems[1] else ()  "/>
   </xsl:function>
 
@@ -463,9 +463,52 @@
     <xsl:perform-sort select="$collection">
       <xsl:sort select="$body(.)"/>
     </xsl:perform-sort>
-
   </xsl:function>
 
+  <doc:doc>
+    <doc:desc>
+      <doc:p>Groups elements in the input sequence by the value of the grouping 
+      key into distinct partitions. </doc:p>      
+    </doc:desc>
+    <doc:param name="collection">The iterated collection.</doc:param>
+    <doc:param name="body">Expression evaluated for each member of
+      <doc:i>collection</doc:i>. </doc:param>
+    <doc:return>Result of groupBy is a sequence of maps. For each distinct grouping key, one 
+    map is added to the result. Each map has 2 keys - 'key' containing the value of the grouping
+    key - and 'partition' containing the sequence of items, for which <doc:i>body</doc:i> returns
+    the key value. </doc:return>
+  </doc:doc>
+  <xsl:function name="oclX:groupBy" as="item()*">
+    <xsl:param name="collection" as="item()*"/>
+    <xsl:param name="body" as="function(item()) as item()"/>
+    
+    <xsl:iterate select="$collection">
+      <!-- expect true in the beginning -->
+      <xsl:param name="grouped" as="item()*" select="()"/>      
+      <xsl:variable name="key" select="$body(current())" />         
+      <xsl:variable name="match" select="$grouped[oclX:oclEqual(.('key'), $key)]" as="item()*" />
+      <xsl:choose>
+        <xsl:when test="exists($match)">
+          <xsl:variable name="updatedPartition" select="
+            map { 'key' := $key, 'partition' := ($match('partition'), current()) }" />          
+          <xsl:next-iteration>            
+            <xsl:with-param name="grouped" select="
+              for $partition in $grouped return if (oclX:oclEqual($partition('key'), $key)) then $updatedPartition else $partition"/>
+          </xsl:next-iteration>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:variable name="newPartition" select="map { 'key' := $key, 'partition' := current() }" />
+          <xsl:next-iteration>
+            <xsl:with-param name="grouped" select="$grouped, $newPartition"/>
+          </xsl:next-iteration>
+        </xsl:otherwise>
+      </xsl:choose>      
+      <xsl:on-completion>
+        <xsl:sequence select="$grouped"/>
+      </xsl:on-completion>
+    </xsl:iterate>    
+  </xsl:function>
+  
   <!-- 
     collection 
   -->
@@ -1215,6 +1258,27 @@
         <xsl:sequence select="deep-equal($item1, $item2)"/>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:function>
+  
+  <xsl:function name="oclX:oclEqual" as="xs:boolean">
+    <xsl:param name="collection1" as="item()*" />
+    <xsl:param name="collection2" as="item()*" />   
+    
+    <xsl:choose>
+      <xsl:when test="count($collection1) eq 0 and count($collection2) eq 0">
+        <xsl:sequence select="true()" />
+      </xsl:when>
+      
+      <xsl:when test="count($collection1) ne count($collection2)">
+        <xsl:sequence select="false()" />
+      </xsl:when>
+      
+      <xsl:otherwise>
+        <xsl:sequence select="every $index in 1 to count($collection1) satisfies 
+          oclXin:combined-eq($collection1[$index], $collection2[$index])"/> 
+      </xsl:otherwise>
+    </xsl:choose>
+    
   </xsl:function>
 
   <doc:doc>

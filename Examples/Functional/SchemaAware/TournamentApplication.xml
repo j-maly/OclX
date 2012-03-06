@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tournamentApplication>
+<tournamentApplication
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+  xsi:noNamespaceSchemaLocation="TournamentApplication.xsd">
   <name>Springfield Open</name>
   <requiredQualificationPoints>21</requiredQualificationPoints>
   <player>
