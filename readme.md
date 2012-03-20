@@ -8,8 +8,8 @@ OclX is a library of XSLT functions designed to check integrity constraints writ
 
 ## To use the library for schema validation 
 
-1) generate a Schematron schema in eXolutio.
-2) pass the schema to XProc pipeline that you can find in Pipeline/oclx-schematron-pipeline.xpl together with the validated document. 
+1. generate a Schematron schema in eXolutio.
+2. pass the schema to XProc pipeline that you can find in Pipeline/oclx-schematron-pipeline.xpl together with the validated document. 
 
 OclX comes in two version 
  * dynamic 
