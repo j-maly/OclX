@@ -12,8 +12,8 @@ OclX is a library of XSLT functions designed to check integrity constraints writ
 2. pass the schema to XProc pipeline that you can find in Pipeline/oclx-schematron-pipeline.xpl together with the validated document. 
 
 OclX comes in two version 
- * dynamic 
- * functional
+* dynamic 
+* functional
 
 Dynamic version was tested with Saxon 9.3 and utilizes Saxon's dynamic evaluation extension functions(saxon:evaluate, see http://saxon.sourceforge.net/saxon7.9/extensions.html#evaluate).
 
