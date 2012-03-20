@@ -28,7 +28,8 @@
 				'prs_F_beforeS_oclX-dynamic.xsl', 
 				'prs_F_getDateS_oclX-dynamic.xsl', 
 				'prs_F_evaluateS_oclX-dynamic.xsl', 
-				'prs_F_varsS_oclX-dynamic.xsl');
+				'prs_F_varsS_oclX-dynamic.xsl', 
+				'prs_varsA_2S_oclX-dynamic.xsl');
 
         
         var usedByBoxes= new Array('uB_F_iterateS_oclX-dynamic.xsl', 
@@ -60,7 +61,8 @@
 				'dS_F_beforeS_oclX-dynamic.xsl', 
 				'dS_F_getDateS_oclX-dynamic.xsl', 
 				'dS_F_evaluateS_oclX-dynamic.xsl', 
-				'dS_F_varsS_oclX-dynamic.xsl');
+				'dS_F_varsS_oclX-dynamic.xsl', 
+				'dS_varsA_2S_oclX-dynamic.xsl');
 
         var sourceBoxes= new Array('src_F_iterateS_oclX-dynamic.xsl', 
 				'src_F_iterate-recS_oclX-dynamic.xsl', 
@@ -83,7 +85,8 @@
 				'src_F_beforeS_oclX-dynamic.xsl', 
 				'src_F_getDateS_oclX-dynamic.xsl', 
 				'src_F_evaluateS_oclX-dynamic.xsl', 
-				'src_F_varsS_oclX-dynamic.xsl');
+				'src_F_varsS_oclX-dynamic.xsl', 
+				'src_varsA_2S_oclX-dynamic.xsl');
 
         
         
@@ -3973,6 +3976,9 @@
                                  
                                  <p>This function creates a sequence required by <i>variables</i> parameter of other
                                     function. See the documentation of <i>oclX:evaluate</i></p>. 
+                                 
+                                 <p>The context variable is named <i>self</i></p>
+                                 
                                  <table>
                                     <tr>
                                        <h4>Parameters</h4>
@@ -4038,6 +4044,123 @@
   </span><span class="tEl">&lt;dummy</span><span class="tEl">/&gt;</span><span class="tI">
   </span><span class="tC">&lt;!-- name of the $self variable --&gt;</span><span class="tI">
   </span><span class="tEl">&lt;self</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tC">&lt;!-- value of the $self variable--&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"$current-node"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+</span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lR"></td>
+         </tr>
+         <tr>
+            <td class="rt_cBL"></td>
+            <td class="rt_lB"></td>
+            <td class="rt_cBR"></td>
+         </tr>
+      </table><a id="varsA_2S_oclX-dynamic.xsl"></a><div class="cmpT">Function
+         <span class="qname">oclX:vars (<span class="fParams">current-node, context-var-name</span>)</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cTL"></td>
+            <td class="rt_lT"></td>
+            <td class="rt_cTR"></td>
+         </tr>
+         <tr>
+            <td class="rt_lL"></td>
+            <td class="rt_cnt">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Documentation</div>
+                           <div class="flR"><input id="bt_dS_varsA_2S_oclX-dynamic.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('dS_varsA_2S_oclX-dynamic.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="dS_varsA_2S_oclX-dynamic.xsl" style="display:block">
+                              <div>
+                                 <h3>Description</h3>
+                                 
+                                 <p>This function creates a sequence required by <i>variables</i> parameter of other
+                                    function. See the documentation of <i>oclX:evaluate</i></p>.      
+                                 
+                                 <table>
+                                    <tr>
+                                       <h4>Parameters</h4>
+                                       <td class="paramName"><b>current-node</b></td>
+                                       <td>Context node must be passed as a value for this parameter.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="paramName"><b>context-var-name</b></td>
+                                       <td>Name of the context variable.</td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Namespace</td>
+                        <td>http://eXolutio.com/oclX/dynamic</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Type</td>
+                        <td>item()*</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Parameters</div>
+                           <div class="flR"><input id="bt_prs_varsA_2S_oclX-dynamic.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_varsA_2S_oclX-dynamic.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="prs_varsA_2S_oclX-dynamic.xsl" style="display:block">
+                              <table class="attsT">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th>Namespace</th>
+                                       <th>Type</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="fCol">context-var-name</td>
+                                    <td>No namespace</td>
+                                    <td>xs:string</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="fCol">current-node</td>
+                                    <td>No namespace</td>
+                                    <td>item()</td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Import precedence</td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Source</div>
+                           <div class="flR"><input id="bt_src_varsA_2S_oclX-dynamic.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('src_varsA_2S_oclX-dynamic.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="src_varsA_2S_oclX-dynamic.xsl" style="display:block">
+                              <table class="pWCont">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:vars"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"current-node"</span><span class="tAN"> as=</span><span class="tAV">"item()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"context-var-name"</span><span class="tAN"> as=</span><span class="tAV">"xs:string"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;variables</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tC">&lt;!-- just a placeholder --&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;dummy</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tC">&lt;!-- name of the context variable --&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:element</span><span class="tAN"> name=</span><span class="tAV">"{$context-var-name}"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tC">&lt;!-- value of the $self variable--&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"$current-node"</span><span class="tXSLEl">/&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>

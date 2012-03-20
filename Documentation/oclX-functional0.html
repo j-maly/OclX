@@ -21,6 +21,7 @@
 				'prs_F_anyS_oclX-functional.xsl', 
 				'prs_F_oneS_oclX-functional.xsl', 
 				'prs_F_sortedByS_oclX-functional.xsl', 
+				'prs_F_groupByS_oclX-functional.xsl', 
 				'prs_F_includesS_oclX-functional.xsl', 
 				'prs_F_includesAllS_oclX-functional.xsl', 
 				'prs_F_excludesS_oclX-functional.xsl', 
@@ -43,6 +44,8 @@
 				'prs_F_setMinusS_oclX-functional.xsl', 
 				'prs_F_symmetricDifferenceS_oclX-functional.xsl', 
 				'prs_F_asSetS_oclX-functional.xsl', 
+				'prs_F_setEqualS_oclX-functional.xsl', 
+				'prs_F_seqEqualS_oclX-functional.xsl', 
 				'prs_F_subOrderedSetS_oclX-functional.xsl', 
 				'prs_F_subSequenceS_oclX-functional.xsl', 
 				'prs_atA_2S_oclX-functional.xsl', 
@@ -51,25 +54,35 @@
 				'prs_F_afterS_oclX-functional.xsl', 
 				'prs_F_beforeS_oclX-functional.xsl', 
 				'prs_F_getDateS_oclX-functional.xsl', 
+				'prs_F_xorS_oclX-functional.xsl', 
+				'prs_F_checkedS_oclX-functional.xsl', 
+				'prs_F_oclIsInvalidS_oclX-functional.xsl', 
+				'prs_F_oclIsValidS_oclX-functional.xsl', 
 				'prs_F_functionItemCallS_oclX-functional.xsl', 
 				'prs_F_getIndicesS_oclX-functional.xsl', 
 				'prs_F_combined-first-index-ofS_oclX-functional.xsl', 
 				'prs_F_combined-eqS_oclX-functional.xsl', 
+				'prs_F_oclEqualS_oclX-functional.xsl', 
 				'prs_F_combined-containsS_oclX-functional.xsl');
 
         
         var usedByBoxes= new Array('uB_P_debugS_oclX-functional.xsl', 
+				'uB_V_errorsS_oclX-functional.xsl', 
 				'uB_F_closure-recS_oclX-functional.xsl', 
+				'uB_F_includesAllS_oclX-functional.xsl', 
 				'uB_F_appendS_oclX-functional.xsl', 
 				'uB_F_atS_oclX-functional.xsl', 
 				'uB_F_asSetS_oclX-functional.xsl', 
+				'uB_F_oclIsInvalidS_oclX-functional.xsl', 
 				'uB_F_functionItemCallS_oclX-functional.xsl', 
 				'uB_F_getIndicesS_oclX-functional.xsl', 
 				'uB_F_combined-first-index-ofS_oclX-functional.xsl', 
-				'uB_F_combined-eqS_oclX-functional.xsl');
+				'uB_F_combined-eqS_oclX-functional.xsl', 
+				'uB_F_oclEqualS_oclX-functional.xsl');
 
         var docBoxes= new Array('dS_oclX-functional.xsl', 
 				'dS_P_debugS_oclX-functional.xsl', 
+				'dS_V_errorsS_oclX-functional.xsl', 
 				'dS_F_forAllNS_oclX-functional.xsl', 
 				'dS_F_forAllS_oclX-functional.xsl', 
 				'dS_F_existsS_oclX-functional.xsl', 
@@ -84,6 +97,7 @@
 				'dS_F_anyS_oclX-functional.xsl', 
 				'dS_F_oneS_oclX-functional.xsl', 
 				'dS_F_sortedByS_oclX-functional.xsl', 
+				'dS_F_groupByS_oclX-functional.xsl', 
 				'dS_F_includesS_oclX-functional.xsl', 
 				'dS_F_includesAllS_oclX-functional.xsl', 
 				'dS_F_excludesS_oclX-functional.xsl', 
@@ -114,6 +128,11 @@
 				'dS_F_afterS_oclX-functional.xsl', 
 				'dS_F_beforeS_oclX-functional.xsl', 
 				'dS_F_getDateS_oclX-functional.xsl', 
+				'dS_F_xorS_oclX-functional.xsl', 
+				'dS_F_checkedS_oclX-functional.xsl', 
+				'dS_F_oclIsInvalidS_oclX-functional.xsl', 
+				'dS_F_oclIsValidS_oclX-functional.xsl', 
+				'dS_F_invalidS_oclX-functional.xsl', 
 				'dS_F_functionItemCallS_oclX-functional.xsl', 
 				'dS_F_getIndicesS_oclX-functional.xsl', 
 				'dS_F_combined-first-index-ofS_oclX-functional.xsl', 
@@ -121,6 +140,7 @@
 				'dS_F_combined-containsS_oclX-functional.xsl');
 
         var sourceBoxes= new Array('src_P_debugS_oclX-functional.xsl', 
+				'src_V_errorsS_oclX-functional.xsl', 
 				'src_F_forAllNS_oclX-functional.xsl', 
 				'src_F_forAllS_oclX-functional.xsl', 
 				'src_F_existsS_oclX-functional.xsl', 
@@ -135,6 +155,7 @@
 				'src_F_anyS_oclX-functional.xsl', 
 				'src_F_oneS_oclX-functional.xsl', 
 				'src_F_sortedByS_oclX-functional.xsl', 
+				'src_F_groupByS_oclX-functional.xsl', 
 				'src_F_includesS_oclX-functional.xsl', 
 				'src_F_includesAllS_oclX-functional.xsl', 
 				'src_F_excludesS_oclX-functional.xsl', 
@@ -157,6 +178,8 @@
 				'src_F_setMinusS_oclX-functional.xsl', 
 				'src_F_symmetricDifferenceS_oclX-functional.xsl', 
 				'src_F_asSetS_oclX-functional.xsl', 
+				'src_F_setEqualS_oclX-functional.xsl', 
+				'src_F_seqEqualS_oclX-functional.xsl', 
 				'src_F_subOrderedSetS_oclX-functional.xsl', 
 				'src_F_subSequenceS_oclX-functional.xsl', 
 				'src_atA_2S_oclX-functional.xsl', 
@@ -165,10 +188,16 @@
 				'src_F_afterS_oclX-functional.xsl', 
 				'src_F_beforeS_oclX-functional.xsl', 
 				'src_F_getDateS_oclX-functional.xsl', 
+				'src_F_xorS_oclX-functional.xsl', 
+				'src_F_checkedS_oclX-functional.xsl', 
+				'src_F_oclIsInvalidS_oclX-functional.xsl', 
+				'src_F_oclIsValidS_oclX-functional.xsl', 
+				'src_F_invalidS_oclX-functional.xsl', 
 				'src_F_functionItemCallS_oclX-functional.xsl', 
 				'src_F_getIndicesS_oclX-functional.xsl', 
 				'src_F_combined-first-index-ofS_oclX-functional.xsl', 
 				'src_F_combined-eqS_oclX-functional.xsl', 
+				'src_F_oclEqualS_oclX-functional.xsl', 
 				'src_F_combined-containsS_oclX-functional.xsl');
 
         
@@ -181,12 +210,24 @@
 				'refs_F_firstS_oclX-functional.xsl', 
 				'refs_F_lastS_oclX-functional.xsl', 
 				'refs_F_indexOfS_oclX-functional.xsl', 
+				'refs_F_insertAtS_oclX-functional.xsl', 
 				'refs_F_includingS_oclX-functional.xsl', 
+				'refs_F_atS_oclX-functional.xsl', 
 				'refs_F_unionS_oclX-functional.xsl', 
 				'refs_F_setMinusS_oclX-functional.xsl', 
 				'refs_F_symmetricDifferenceS_oclX-functional.xsl', 
+				'refs_F_setEqualS_oclX-functional.xsl', 
+				'refs_F_seqEqualS_oclX-functional.xsl', 
+				'refs_F_subOrderedSetS_oclX-functional.xsl', 
+				'refs_F_subSequenceS_oclX-functional.xsl', 
+				'refs_atA_2S_oclX-functional.xsl', 
+				'refs_F_checkedS_oclX-functional.xsl', 
+				'refs_F_oclIsInvalidS_oclX-functional.xsl', 
+				'refs_F_oclIsValidS_oclX-functional.xsl', 
+				'refs_F_invalidS_oclX-functional.xsl', 
 				'refs_F_getIndicesS_oclX-functional.xsl', 
 				'refs_F_combined-first-index-ofS_oclX-functional.xsl', 
+				'refs_F_oclEqualS_oclX-functional.xsl', 
 				'refs_F_combined-containsS_oclX-functional.xsl');
 
         
@@ -654,10 +695,16 @@
                            <div id="uB_P_debugS_oclX-functional.xsl" style="display:block">
                               <table class="uBT">
                                  <tr>
-                                    <td class="fCol">Function</td>
+                                    <td class="fCol">Functions</td>
                                     <td>
                                        <div class="listGrouping">
-                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_iterateS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:iterate (</span><span class="fParams">collection, accInit, body, acc</span><span>)</span></a></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_checkedS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:checked (</span><span class="fParams">func</span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_firstS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:first (</span><span class="fParams">collection</span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_iterateS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:iterate (</span><span class="fParams">collection, accInit, body, acc</span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_lastS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:last (</span><span class="fParams">collection</span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_oclIsInvalidS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:oclIsInvalid (</span><span class="fParams">func</span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_subOrderedSetS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:subOrderedSet (</span><span class="fParams">collection, lower, upper</span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_subSequenceS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:subSequence (</span><span class="fParams">collection, lower, upper</span><span>)</span></a></div>
                                        </div>
                                     </td>
                                  </tr>
@@ -675,6 +722,99 @@
                               <table class="pWCont">
                                  <tr>
                                     <td width="100%"><pre><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"debug"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tAN"> select=</span><span class="tAV">"false()"</span><span class="tXSLEl">/&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lR"></td>
+         </tr>
+         <tr>
+            <td class="rt_cBL"></td>
+            <td class="rt_lB"></td>
+            <td class="rt_cBR"></td>
+         </tr>
+      </table><a id="V_errorsS_oclX-functional.xsl"></a><div class="cmpT">Variable
+         <span class="qname">errors</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cTL"></td>
+            <td class="rt_lT"></td>
+            <td class="rt_cTR"></td>
+         </tr>
+         <tr>
+            <td class="rt_lL"></td>
+            <td class="rt_cnt">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Documentation</div>
+                           <div class="flR"><input id="bt_dS_V_errorsS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('dS_V_errorsS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="dS_V_errorsS_oclX-functional.xsl" style="display:block">
+                              <div>
+                                 <h3>Description</h3>
+                                 
+                                 <p>Definitions of runtime OclX errors. </p>
+                                 
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Namespace</td>
+                        <td>No namespace</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Select</td>
+                        <td>document('oclX-error.xml')//oclError:error</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Type</td>
+                        <td>element()*</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Used by</div>
+                           <div class="flR"><input id="bt_uB_V_errorsS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('uB_V_errorsS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="uB_V_errorsS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Functions</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#atA_2S_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/types/string" onclick="updPT('oclX-functional.xsl')"><span>oclString:at (</span><span class="fParams">string, index</span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_atS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:at (</span><span class="fParams">collection, index</span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_firstS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:first (</span><span class="fParams">collection</span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_insertAtS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:insertAt (</span><span class="fParams">collection, index, item</span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_invalidS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:invalid (</span><span class="fParams"></span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_lastS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:last (</span><span class="fParams">collection</span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_subOrderedSetS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:subOrderedSet (</span><span class="fParams">collection, lower, upper</span><span>)</span></a><span class="refItemSep">;</span></div>
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_subSequenceS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:subSequence (</span><span class="fParams">collection, lower, upper</span><span>)</span></a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Source</div>
+                           <div class="flR"><input id="bt_src_V_errorsS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('src_V_errorsS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="src_V_errorsS_oclX-functional.xsl" style="display:block">
+                              <table class="pWCont">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"errors"</span><span class="tAN"> as=</span><span class="tAV">"element()*"</span><span class="tAN"> select=</span><span class="tAV">"document('oclX-error.xml')//oclError:error"</span><span class="tXSLEl">/&gt;</span></pre></td>
                                  </tr>
                               </table>
                            </div>
@@ -837,9 +977,9 @@
     </span><span class="tC">&lt;!-- expect true in the beginning --&gt;</span><span class="tI">
     </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"satisfied"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tAN"> select=</span><span class="tAV">"true()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
     </span><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"indices"</span><span class="tAN"> select=</span><span class="tAV">"         oclXin:getIndices(. - 1, count($collection), $iteratorCount, ())"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-    </span><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"forThis"</span><span class="tAN"> select=</span><span class="tAV">"oclXin:functionItemCall(         $body, $iteratorCount, $indices, $collection)"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"forThis"</span><span class="tAN"> select=</span><span class="tAV">"oclXin:functionItemCall(         $body, $iteratorCount, $indices, $collection)"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean?"</span><span class="tXSLEl">/&gt;</span><span class="tI">
     </span><span class="tXSLEl">&lt;xsl:choose</span><span class="tXSLEl">&gt;</span><span class="tI">
-      </span><span class="tXSLEl">&lt;xsl:when</span><span class="tAN"> test=</span><span class="tAV">"$forThis eq false()"</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:when</span><span class="tAN"> test=</span><span class="tAV">"boolean($forThis) eq false()"</span><span class="tXSLEl">&gt;</span><span class="tI">
         </span><span class="tXSLEl">&lt;xsl:break</span><span class="tXSLEl">&gt;</span><span class="tI">
           </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"false()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
         </span><span class="tXSLEl">&lt;/xsl:break&gt;</span><span class="tI">
@@ -956,7 +1096,7 @@
                                  <tr>
                                     <td class="fCol">body</td>
                                     <td>No namespace</td>
-                                    <td>function(item()) as xs:boolean</td>
+                                    <td>function(item()) as xs:boolean?</td>
                                  </tr>
                                  <tr>
                                     <td class="fCol">collection</td>
@@ -982,7 +1122,7 @@
                                  <tr>
                                     <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:forAll"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tXSLEl">&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as xs:boolean"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as xs:boolean?"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"every $it in $collection satisfies $body($it) "</span><span class="tXSLEl">/&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
@@ -1077,7 +1217,7 @@
                                  <tr>
                                     <td class="fCol">body</td>
                                     <td>No namespace</td>
-                                    <td>function(item()) as xs:boolean</td>
+                                    <td>function(item()) as xs:boolean?</td>
                                  </tr>
                                  <tr>
                                     <td class="fCol">collection</td>
@@ -1103,9 +1243,13 @@
                                  <tr>
                                     <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:exists"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tXSLEl">&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as xs:boolean"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tC">&lt;!--&lt;xsl:sequence select="some $it in $collection satisfies $body($it) "/&gt;--&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"oclX:iterate($collection, false(),        function($it, $acc) { $acc or ($body($it)) })"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as xs:boolean?"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"some $it in $collection satisfies $body($it) "</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tC">&lt;!--
+    &lt;xsl:sequence
+      select="oclX:iterate($collection, false(), 
+      function($it, $acc) { $acc or boolean($body($it)) })"/&gt;
+    --&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
                               </table>
@@ -1266,12 +1410,9 @@
       </span><span class="tXSLEl">&lt;xsl:value-of</span><span class="tAN"> select=</span><span class="tAV">"."</span><span class="tXSLEl">/&gt;</span><span class="tI">
     </span><span class="tXSLEl">&lt;/xsl:message&gt;</span><span class="tI">
     </span><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"indices"</span><span class="tAN"> select=</span><span class="tAV">"         oclXin:getIndices(. - 1, count($collection), $iteratorCount, ())"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-    </span><span class="tXSLEl">&lt;xsl:message</span><span class="tXSLEl">&gt;</span><span class="tT" style="white-space:normal">Indices:</span><span class="tI">
-      </span><span class="tXSLEl">&lt;xsl:value-of</span><span class="tAN"> select=</span><span class="tAV">"$indices"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-    </span><span class="tXSLEl">&lt;/xsl:message&gt;</span><span class="tI">
-    </span><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"forThis"</span><span class="tAN"> select=</span><span class="tAV">"oclXin:functionItemCall(         $body, $iteratorCount, $indices, $collection)"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"forThis"</span><span class="tAN"> select=</span><span class="tAV">"oclXin:functionItemCall(         $body, $iteratorCount, $indices, $collection)"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean?"</span><span class="tXSLEl">/&gt;</span><span class="tI">
     </span><span class="tXSLEl">&lt;xsl:choose</span><span class="tXSLEl">&gt;</span><span class="tI">
-      </span><span class="tXSLEl">&lt;xsl:when</span><span class="tAN"> test=</span><span class="tAV">"$forThis eq true()"</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:when</span><span class="tAN"> test=</span><span class="tAV">"boolean($forThis) eq true()"</span><span class="tXSLEl">&gt;</span><span class="tI">
         </span><span class="tXSLEl">&lt;xsl:break</span><span class="tXSLEl">&gt;</span><span class="tI">
           </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"true()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
         </span><span class="tXSLEl">&lt;/xsl:break&gt;</span><span class="tI">
@@ -1447,7 +1588,8 @@
         </span><span class="tXSLEl">&lt;xsl:value-of</span><span class="tAN"> select=</span><span class="tAV">"count($collection)"</span><span class="tXSLEl">/&gt;</span><span class="tI">
       </span><span class="tXSLEl">&lt;/xsl:message&gt;</span><span class="tI">
       </span><span class="tXSLEl">&lt;xsl:message</span><span class="tXSLEl">&gt;</span><span class="tT" style="white-space:normal">Current:</span><span class="tI">
-        </span><span class="tXSLEl">&lt;xsl:value-of</span><span class="tAN"> select=</span><span class="tAV">"$collection[current()]"</span><span class="tXSLEl">/&gt;</span><span class="tT" style="white-space:normal">"/&gt;</span><span class="tXSLEl">&lt;/xsl:message&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:copy-of</span><span class="tAN"> select=</span><span class="tAV">"$collection[current()]"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;/xsl:message&gt;</span><span class="tI">
     </span><span class="tXSLEl">&lt;/xsl:if&gt;</span><span class="tI">
     </span><span class="tXSLEl">&lt;xsl:next-iteration</span><span class="tXSLEl">&gt;</span><span class="tI">
       </span><span class="tXSLEl">&lt;xsl:with-param</span><span class="tAN"> name=</span><span class="tAV">"acc"</span><span class="tAN"> select=</span><span class="tAV">"$body($collection[current()], $acc)"</span><span class="tXSLEl">/&gt;</span><span class="tI">
@@ -2103,7 +2245,7 @@
                                  <tr>
                                     <td class="fCol">body</td>
                                     <td>No namespace</td>
-                                    <td>function(item()) as item()</td>
+                                    <td>function(item()) as xs:boolean?</td>
                                  </tr>
                                  <tr>
                                     <td class="fCol">collection</td>
@@ -2129,8 +2271,8 @@
                                  <tr>
                                     <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:select"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as item()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"oclX:iterate($collection, (),        function($it, $acc) { if ($body($it)) then oclX:including($acc, $it) else $acc })"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as xs:boolean?"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"oclX:iterate($collection, (),        function($it, $acc) { if (boolean($body($it))) then oclX:including($acc, $it) else $acc })"</span><span class="tXSLEl">/&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
                               </table>
@@ -2221,7 +2363,7 @@
                                  <tr>
                                     <td class="fCol">body</td>
                                     <td>No namespace</td>
-                                    <td>function(item()) as item()</td>
+                                    <td>function(item()) as xs:boolean?</td>
                                  </tr>
                                  <tr>
                                     <td class="fCol">collection</td>
@@ -2247,7 +2389,7 @@
                                  <tr>
                                     <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:reject"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as item()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as xs:boolean?"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"oclX:iterate($collection, (),        function($it, $acc) { if (not($body($it))) then oclX:including($acc, $it) else $acc })"</span><span class="tXSLEl">/&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
@@ -2323,7 +2465,7 @@
                      </tr>
                      <tr>
                         <td class="fCol">Type</td>
-                        <td>item()</td>
+                        <td>item()*</td>
                      </tr>
                      <tr>
                         <td class="fCol">
@@ -2343,7 +2485,7 @@
                                  <tr>
                                     <td class="fCol">body</td>
                                     <td>No namespace</td>
-                                    <td>function(item()) as item()</td>
+                                    <td>function(item()) as xs:boolean?</td>
                                  </tr>
                                  <tr>
                                     <td class="fCol">collection</td>
@@ -2367,11 +2509,11 @@
                            <div id="src_F_anyS_oclX-functional.xsl" style="display:block">
                               <table class="pWCont">
                                  <tr>
-                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:any"</span><span class="tAN"> as=</span><span class="tAV">"item()"</span><span class="tXSLEl">&gt;</span><span class="tI">
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:any"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as item()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as xs:boolean?"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"satisfyingItems"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">&gt;</span><span class="tI">
-    </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"oclX:iterate(         $collection, (),                     function($it, $acc) {         $acc, if ($body($it) eq true()) then $it else ()         }         )"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"oclX:iterate(         $collection, (),                     function($it, $acc) { $acc, if (boolean($body($it)) eq true()) then $it else () }         )"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;/xsl:variable&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"if (count($satisfyingItems) ge 1) then $satisfyingItems[1] else ()  "</span><span class="tXSLEl">/&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
@@ -2464,7 +2606,7 @@
                                  <tr>
                                     <td class="fCol">body</td>
                                     <td>No namespace</td>
-                                    <td>function(item()) as item()</td>
+                                    <td>function(item()) as xs:boolean?</td>
                                  </tr>
                                  <tr>
                                     <td class="fCol">collection</td>
@@ -2490,9 +2632,9 @@
                                  <tr>
                                     <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:one"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tXSLEl">&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as item()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as xs:boolean?"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"satisfyingItems"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">&gt;</span><span class="tI">
-    </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"oclX:iterate(         $collection, (),                     function($it, $acc) {         $acc, if ($body($it) eq true()) then $it else ()         }         )"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"oclX:iterate(         $collection, (),                     function($it, $acc) { $acc, if (boolean($body($it)) eq true()) then $it else () }         )"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;/xsl:variable&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"if (count($satisfyingItems) eq 1) then true() else false()  "</span><span class="tXSLEl">/&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
@@ -2616,6 +2758,156 @@
   </span><span class="tXSLEl">&lt;xsl:perform-sort</span><span class="tAN"> select=</span><span class="tAV">"$collection"</span><span class="tXSLEl">&gt;</span><span class="tI">
     </span><span class="tXSLEl">&lt;xsl:sort</span><span class="tAN"> select=</span><span class="tAV">"$body(.)"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;/xsl:perform-sort&gt;</span><span class="tI">
+</span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lR"></td>
+         </tr>
+         <tr>
+            <td class="rt_cBL"></td>
+            <td class="rt_lB"></td>
+            <td class="rt_cBR"></td>
+         </tr>
+      </table><a id="F_groupByS_oclX-functional.xsl"></a><div class="cmpT">Function
+         <span class="qname">oclX:groupBy (<span class="fParams">collection, body, grouped</span>)</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cTL"></td>
+            <td class="rt_lT"></td>
+            <td class="rt_cTR"></td>
+         </tr>
+         <tr>
+            <td class="rt_lL"></td>
+            <td class="rt_cnt">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Documentation</div>
+                           <div class="flR"><input id="bt_dS_F_groupByS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('dS_F_groupByS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="dS_F_groupByS_oclX-functional.xsl" style="display:block">
+                              <div>
+                                 <h3>Description</h3>
+                                 
+                                 <p>Groups elements in the input sequence by the value of the grouping 
+                                    key into distinct partitions. 
+                                 </p>      
+                                 
+                                 <table>
+                                    <tr>
+                                       <h4>Parameters</h4>
+                                       <td class="paramName"><b>collection</b></td>
+                                       <td>The iterated collection.</td>
+                                    </tr>
+                                    <tr>
+                                       <td class="paramName"><b>body</b></td>
+                                       <td>Expression evaluated for each member of
+                                          <i class="paramDesc">collection</i>. 
+                                       </td>
+                                    </tr>
+                                 </table>
+                                 <h4>Return</h4>Result of groupBy is a sequence of maps. For each distinct grouping key, one 
+                                 map is added to the result. Each map has 2 keys - 'key' containing the value of the
+                                 grouping
+                                 key - and 'partition' containing the sequence of items, for which <i>body</i> returns
+                                 the key value. 
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Namespace</td>
+                        <td>http://eXolutio.com/oclX/functional</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Type</td>
+                        <td>item()*</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Parameters</div>
+                           <div class="flR"><input id="bt_prs_F_groupByS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_F_groupByS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="prs_F_groupByS_oclX-functional.xsl" style="display:block">
+                              <table class="attsT">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th>Namespace</th>
+                                       <th>Select</th>
+                                       <th>Type</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="fCol">body</td>
+                                    <td>No namespace</td>
+                                    <td></td>
+                                    <td>function(item()) as item()</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="fCol">collection</td>
+                                    <td>No namespace</td>
+                                    <td></td>
+                                    <td>item()*</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="fCol">grouped</td>
+                                    <td>No namespace</td>
+                                    <td>()</td>
+                                    <td>item()*</td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Import precedence</td>
+                        <td>0</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Source</div>
+                           <div class="flR"><input id="bt_src_F_groupByS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('src_F_groupByS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="src_F_groupByS_oclX-functional.xsl" style="display:block">
+                              <table class="pWCont">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:groupBy"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"body"</span><span class="tAN"> as=</span><span class="tAV">"function(item()) as item()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:iterate</span><span class="tAN"> select=</span><span class="tAV">"$collection"</span><span class="tXSLEl">&gt;</span><span class="tI">
+    </span><span class="tC">&lt;!-- expect true in the beginning --&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"grouped"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tAN"> select=</span><span class="tAV">"()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"key"</span><span class="tAN"> select=</span><span class="tAV">"$body(current())"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"match"</span><span class="tAN"> select=</span><span class="tAV">"$grouped[oclX:oclEqual(.('key'), $key)]"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:choose</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:when</span><span class="tAN"> test=</span><span class="tAV">"exists($match)"</span><span class="tXSLEl">&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"updatedPartition"</span><span class="tAN"> select=</span><span class="tAV">"             map { 'key' := $key, 'partition' := ($match('partition'), current()) }"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:next-iteration</span><span class="tXSLEl">&gt;</span><span class="tI">
+          </span><span class="tXSLEl">&lt;xsl:with-param</span><span class="tAN"> name=</span><span class="tAV">"grouped"</span><span class="tAN"> select=</span><span class="tAV">"               for $partition in $grouped return if (oclX:oclEqual($partition('key'), $key)) then $updatedPartition else $partition"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;/xsl:next-iteration&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;/xsl:when&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:otherwise</span><span class="tXSLEl">&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:variable</span><span class="tAN"> name=</span><span class="tAV">"newPartition"</span><span class="tAN"> select=</span><span class="tAV">"map { 'key' := $key, 'partition' := current() }"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:next-iteration</span><span class="tXSLEl">&gt;</span><span class="tI">
+          </span><span class="tXSLEl">&lt;xsl:with-param</span><span class="tAN"> name=</span><span class="tAV">"grouped"</span><span class="tAN"> select=</span><span class="tAV">"$grouped, $newPartition"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;/xsl:next-iteration&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;/xsl:otherwise&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:choose&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:on-completion</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"$grouped"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:on-completion&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;/xsl:iterate&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
                               </table>
@@ -2798,6 +3090,26 @@
                      <tr>
                         <td class="fCol">Type</td>
                         <td>xs:boolean</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Used by</div>
+                           <div class="flR"><input id="bt_uB_F_includesAllS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('uB_F_includesAllS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="uB_F_includesAllS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Function</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_setEqualS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:setEqual (</span><span class="fParams">collection1, collection2</span><span>)</span></a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
                      </tr>
                      <tr>
                         <td class="fCol">
@@ -3363,6 +3675,22 @@
                            <div id="refs_F_firstS_oclX-functional.xsl" style="display:block">
                               <table class="uBT">
                                  <tr>
+                                    <td class="fCol">Parameter</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#P_debugS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">debug</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="fCol">Variable</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#V_errorsS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">errors</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
                                     <td class="fCol">Function</td>
                                     <td>
                                        <div class="listGrouping">
@@ -3413,7 +3741,17 @@
                                  <tr>
                                     <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:first"</span><span class="tAN"> as=</span><span class="tAV">"item()"</span><span class="tXSLEl">&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"oclX:at($collection, 1)"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:choose</span><span class="tXSLEl">&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:when</span><span class="tAN"> test=</span><span class="tAV">"count($collection) eq 0"</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:if</span><span class="tAN"> test=</span><span class="tAV">"$debug"</span><span class="tXSLEl">&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:message</span><span class="tAN"> select=</span><span class="tAV">"'Attempt to get first item in an empty collection'"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;/xsl:if&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"           error(QName('http://eXolutio.com/oclX/functional/error', 'oclError:E004'),            $errors[@xml:id='E004']/oclError:description/text())"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:when&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:otherwise</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"oclX:at($collection, 1)"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:otherwise&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;/xsl:choose&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
                               </table>
@@ -3484,6 +3822,22 @@
                            <div id="refs_F_lastS_oclX-functional.xsl" style="display:block">
                               <table class="uBT">
                                  <tr>
+                                    <td class="fCol">Parameter</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#P_debugS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">debug</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="fCol">Variable</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#V_errorsS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">errors</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
                                     <td class="fCol">Function</td>
                                     <td>
                                        <div class="listGrouping">
@@ -3534,7 +3888,17 @@
                                  <tr>
                                     <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:last"</span><span class="tAN"> as=</span><span class="tAV">"item()"</span><span class="tXSLEl">&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"oclX:at($collection, count($collection))"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:choose</span><span class="tXSLEl">&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:when</span><span class="tAN"> test=</span><span class="tAV">"count($collection) eq 0"</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:if</span><span class="tAN"> test=</span><span class="tAV">"$debug"</span><span class="tXSLEl">&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:message</span><span class="tAN"> select=</span><span class="tAV">"'Attempt to get last item in an empty collection'"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;/xsl:if&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"           error(QName('http://eXolutio.com/oclX/functional/error', 'oclError:E004'),            $errors[@xml:id='E004']/oclError:description/text())"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:when&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:otherwise</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"oclX:at($collection, count($collection))"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:otherwise&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;/xsl:choose&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
                               </table>
@@ -3734,7 +4098,27 @@
                      </tr>
                      <tr>
                         <td class="fCol">Type</td>
-                        <td>xs:integer</td>
+                        <td>item()*</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">References</div>
+                           <div class="flR"><input id="bt_refs_F_insertAtS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('refs_F_insertAtS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="refs_F_insertAtS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Variable</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#V_errorsS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">errors</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
                      </tr>
                      <tr>
                         <td class="fCol">
@@ -3783,11 +4167,11 @@
                            <div id="src_F_insertAtS_oclX-functional.xsl" style="display:block">
                               <table class="pWCont">
                                  <tr>
-                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:insertAt"</span><span class="tAN"> as=</span><span class="tAV">"xs:integer"</span><span class="tXSLEl">&gt;</span><span class="tI">
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:insertAt"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"index"</span><span class="tAN"> as=</span><span class="tAV">"xs:integer"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"item"</span><span class="tAN"> as=</span><span class="tAV">"item()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"for $i in 1 to count($collection) return        if ($i eq $index) then ($item, $collection($i))       else $collection($i)"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"       if ((count($collection) + 1) ge $index) then         for $i in 1 to (count($collection) + 1) return            if ($i eq $index) then ($item, $collection[$i])           else $collection[$i]       else error(QName('http://eXolutio.com/oclX/functional/error', 'oclError:E002'),                   $errors[@xml:id='E002']/oclError:description/text(), $index)"</span><span class="tXSLEl">/&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
                               </table>
@@ -4682,6 +5066,26 @@
                      </tr>
                      <tr>
                         <td class="fCol">
+                           <div class="flL">References</div>
+                           <div class="flR"><input id="bt_refs_F_atS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('refs_F_atS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="refs_F_atS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Variable</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#V_errorsS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">errors</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
                            <div class="flL">Parameters</div>
                            <div class="flR"><input id="bt_prs_F_atS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_F_atS_oclX-functional.xsl');" class="control" /></div>
                         </td>
@@ -4725,7 +5129,7 @@
                                     <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:at"</span><span class="tAN"> as=</span><span class="tAV">"item()"</span><span class="tXSLEl">&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"index"</span><span class="tAN"> as=</span><span class="tAV">"xs:integer"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"$collection[$index]"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"       if (count($collection) ge $index) then $collection[$index] else          error(QName('http://eXolutio.com/oclX/functional/error', 'oclError:E002'),          $errors[@xml:id='E002']/oclError:description/text(), $index)"</span><span class="tXSLEl">/&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
                               </table>
@@ -5255,6 +5659,212 @@
             <td class="rt_lB"></td>
             <td class="rt_cBR"></td>
          </tr>
+      </table><a id="F_setEqualS_oclX-functional.xsl"></a><div class="cmpT">Function
+         <span class="qname">oclX:setEqual (<span class="fParams">collection1, collection2</span>)</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cTL"></td>
+            <td class="rt_lT"></td>
+            <td class="rt_cTR"></td>
+         </tr>
+         <tr>
+            <td class="rt_lL"></td>
+            <td class="rt_cnt">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="fCol">Namespace</td>
+                        <td>http://eXolutio.com/oclX/functional</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Type</td>
+                        <td>item()*</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">References</div>
+                           <div class="flR"><input id="bt_refs_F_setEqualS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('refs_F_setEqualS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="refs_F_setEqualS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Function</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_includesAllS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>includesAll (</span><span class="fParams">collection, collection2</span><span>)</span></a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Parameters</div>
+                           <div class="flR"><input id="bt_prs_F_setEqualS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_F_setEqualS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="prs_F_setEqualS_oclX-functional.xsl" style="display:block">
+                              <table class="attsT">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th>Namespace</th>
+                                       <th>Type</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="fCol">collection1</td>
+                                    <td>No namespace</td>
+                                    <td>item()*</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="fCol">collection2</td>
+                                    <td>No namespace</td>
+                                    <td>item()*</td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Import precedence</td>
+                        <td>0</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Source</div>
+                           <div class="flR"><input id="bt_src_F_setEqualS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('src_F_setEqualS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="src_F_setEqualS_oclX-functional.xsl" style="display:block">
+                              <table class="pWCont">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:setEqual"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection1"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection2"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"(count($collection1) eq count($collection2)) and          oclX:includesAll($collection1, $collection2)"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+</span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lR"></td>
+         </tr>
+         <tr>
+            <td class="rt_cBL"></td>
+            <td class="rt_lB"></td>
+            <td class="rt_cBR"></td>
+         </tr>
+      </table><a id="F_seqEqualS_oclX-functional.xsl"></a><div class="cmpT">Function
+         <span class="qname">oclX:seqEqual (<span class="fParams">collection1, collection2</span>)</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cTL"></td>
+            <td class="rt_lT"></td>
+            <td class="rt_cTR"></td>
+         </tr>
+         <tr>
+            <td class="rt_lL"></td>
+            <td class="rt_cnt">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="fCol">Namespace</td>
+                        <td>http://eXolutio.com/oclX/functional</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Type</td>
+                        <td>item()*</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">References</div>
+                           <div class="flR"><input id="bt_refs_F_seqEqualS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('refs_F_seqEqualS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="refs_F_seqEqualS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Function</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_oclEqualS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclEqual (</span><span class="fParams">collection1, collection2</span><span>)</span></a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Parameters</div>
+                           <div class="flR"><input id="bt_prs_F_seqEqualS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_F_seqEqualS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="prs_F_seqEqualS_oclX-functional.xsl" style="display:block">
+                              <table class="attsT">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th>Namespace</th>
+                                       <th>Type</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="fCol">collection1</td>
+                                    <td>No namespace</td>
+                                    <td>item()*</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="fCol">collection2</td>
+                                    <td>No namespace</td>
+                                    <td>item()*</td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Import precedence</td>
+                        <td>0</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Source</div>
+                           <div class="flR"><input id="bt_src_F_seqEqualS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('src_F_seqEqualS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="src_F_seqEqualS_oclX-functional.xsl" style="display:block">
+                              <table class="pWCont">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:seqEqual"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection1"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection2"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"(count($collection1) eq count($collection2)) and        (every $index in 1 to count($collection1) satisfies oclX:oclEqual($collection1[$index], $collection2[$index]))"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+</span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lR"></td>
+         </tr>
+         <tr>
+            <td class="rt_cBL"></td>
+            <td class="rt_lB"></td>
+            <td class="rt_cBR"></td>
+         </tr>
       </table><a id="F_subOrderedSetS_oclX-functional.xsl"></a><div class="cmpT">Function
          <span class="qname">oclX:subOrderedSet (<span class="fParams">collection, lower, upper</span>)</span></div>
       <table class="rt">
@@ -5309,6 +5919,34 @@
                      </tr>
                      <tr>
                         <td class="fCol">
+                           <div class="flL">References</div>
+                           <div class="flR"><input id="bt_refs_F_subOrderedSetS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('refs_F_subOrderedSetS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="refs_F_subOrderedSetS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Parameter</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#P_debugS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">debug</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="fCol">Variable</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#V_errorsS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">errors</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
                            <div class="flL">Parameters</div>
                            <div class="flR"><input id="bt_prs_F_subOrderedSetS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_F_subOrderedSetS_oclX-functional.xsl');" class="control" /></div>
                         </td>
@@ -5358,7 +5996,17 @@
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"lower"</span><span class="tAN"> as=</span><span class="tAV">"xs:integer"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"upper"</span><span class="tAN"> as=</span><span class="tAV">"xs:integer"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"for $index in $lower to $upper return $collection[$index]"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:choose</span><span class="tXSLEl">&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:when</span><span class="tAN"> test=</span><span class="tAV">"($lower gt $upper) or         ($lower gt count($collection)) or         ($upper gt count($collection)) or         ($lower le 0) or          ($upper le 0)"</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:if</span><span class="tAN"> test=</span><span class="tAV">"$debug"</span><span class="tXSLEl">&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:message</span><span class="tAN"> select=</span><span class="tAV">"             'Failed attemt to get a subseqeunce of a sequence of length: ' || count($collection) ||              ' , lower index: ' || $lower || ' upper index: ' || $upper "</span><span class="tXSLEl">/&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;/xsl:if&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"           error(QName('http://eXolutio.com/oclX/functional/error', 'oclError:E002'),            $errors[@xml:id='E002']/oclError:description/text(), ($lower, $upper))"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:when&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:otherwise</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"for $index in $lower to $upper return $collection[$index]"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:otherwise&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;/xsl:choose&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
                               </table>
@@ -5429,6 +6077,34 @@
                      </tr>
                      <tr>
                         <td class="fCol">
+                           <div class="flL">References</div>
+                           <div class="flR"><input id="bt_refs_F_subSequenceS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('refs_F_subSequenceS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="refs_F_subSequenceS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Parameter</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#P_debugS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">debug</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="fCol">Variable</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#V_errorsS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">errors</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
                            <div class="flL">Parameters</div>
                            <div class="flR"><input id="bt_prs_F_subSequenceS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_F_subSequenceS_oclX-functional.xsl');" class="control" /></div>
                         </td>
@@ -5478,7 +6154,17 @@
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"lower"</span><span class="tAN"> as=</span><span class="tAV">"xs:integer"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"upper"</span><span class="tAN"> as=</span><span class="tAV">"xs:integer"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"for $index in $lower to $upper return $collection[$index]"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:choose</span><span class="tXSLEl">&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:when</span><span class="tAN"> test=</span><span class="tAV">"($lower gt $upper) or         ($lower gt count($collection)) or         ($upper gt count($collection)) or         ($lower le 0) or          ($upper le 0)"</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:if</span><span class="tAN"> test=</span><span class="tAV">"$debug"</span><span class="tXSLEl">&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:message</span><span class="tAN"> select=</span><span class="tAV">"             'Failed attemt to get a subseqeunce of a sequence of length: ' || count($collection) ||              ' , lower index: ' || $lower || ' upper index: ' || $upper "</span><span class="tXSLEl">/&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;/xsl:if&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"           error(QName('http://eXolutio.com/oclX/functional/error', 'oclError:E002'),            $errors[@xml:id='E002']/oclError:description/text(), ($lower, $upper))"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:when&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:otherwise</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"for $index in $lower to $upper return $collection[$index]"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:otherwise&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;/xsl:choose&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
                               </table>
@@ -5548,6 +6234,26 @@
                      </tr>
                      <tr>
                         <td class="fCol">
+                           <div class="flL">References</div>
+                           <div class="flR"><input id="bt_refs_atA_2S_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('refs_atA_2S_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="refs_atA_2S_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Variable</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#V_errorsS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">errors</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
                            <div class="flL">Parameters</div>
                            <div class="flR"><input id="bt_prs_atA_2S_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_atA_2S_oclX-functional.xsl');" class="control" /></div>
                         </td>
@@ -5591,7 +6297,7 @@
                                     <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclString:at"</span><span class="tAN"> as=</span><span class="tAV">"xs:string"</span><span class="tXSLEl">&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"string"</span><span class="tAN"> as=</span><span class="tAV">"xs:string"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"index"</span><span class="tAN"> as=</span><span class="tAV">"xs:integer"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"substring($string, $index, 1)"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"       if (string-length($string) ge $index) then substring($string, $index, 1) else          error(QName('http://eXolutio.com/oclX/functional/error', 'oclError:E005'),          $errors[@xml:id='E005']/oclError:description/text())"</span><span class="tXSLEl">/&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
                               </table>
@@ -6142,6 +6848,613 @@
             <td class="rt_lB"></td>
             <td class="rt_cBR"></td>
          </tr>
+      </table><a id="F_xorS_oclX-functional.xsl"></a><div class="cmpT">Function
+         <span class="qname">oclBoolean:xor (<span class="fParams">arg1, arg2</span>)</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cTL"></td>
+            <td class="rt_lT"></td>
+            <td class="rt_cTR"></td>
+         </tr>
+         <tr>
+            <td class="rt_lL"></td>
+            <td class="rt_cnt">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Documentation</div>
+                           <div class="flR"><input id="bt_dS_F_xorS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('dS_F_xorS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="dS_F_xorS_oclX-functional.xsl" style="display:block">
+                              <div>
+                                 <h3>Description</h3>Computes logical xor.
+                              </div>
+                              <hr />
+                              <div>
+                                 <h3>Description</h3><pre> 
+    Boolean
+    </pre></div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Namespace</td>
+                        <td>http://eXolutio.com/oclX/types/xor</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Type</td>
+                        <td>xs:boolean</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Parameters</div>
+                           <div class="flR"><input id="bt_prs_F_xorS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_F_xorS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="prs_F_xorS_oclX-functional.xsl" style="display:block">
+                              <table class="attsT">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th>Namespace</th>
+                                       <th>Type</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="fCol">arg1</td>
+                                    <td>No namespace</td>
+                                    <td>xs:boolean</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="fCol">arg2</td>
+                                    <td>No namespace</td>
+                                    <td>xs:boolean</td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Import precedence</td>
+                        <td>0</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Source</div>
+                           <div class="flR"><input id="bt_src_F_xorS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('src_F_xorS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="src_F_xorS_oclX-functional.xsl" style="display:block">
+                              <table class="pWCont">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclBoolean:xor"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tXSLEl">&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"arg1"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"arg2"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"($arg1 and not($arg2)) or (not($arg1) and $arg2)"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+</span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lR"></td>
+         </tr>
+         <tr>
+            <td class="rt_cBL"></td>
+            <td class="rt_lB"></td>
+            <td class="rt_cBR"></td>
+         </tr>
+      </table><a id="F_checkedS_oclX-functional.xsl"></a><div class="cmpT">Function
+         <span class="qname">oclX:checked (<span class="fParams">func</span>)</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cTL"></td>
+            <td class="rt_lT"></td>
+            <td class="rt_cTR"></td>
+         </tr>
+         <tr>
+            <td class="rt_lL"></td>
+            <td class="rt_cnt">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Documentation</div>
+                           <div class="flR"><input id="bt_dS_F_checkedS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('dS_F_checkedS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="dS_F_checkedS_oclX-functional.xsl" style="display:block">
+                              <div>
+                                 <h3>Description</h3>
+                                 
+                                 <p>Evaluates <i>func</i> and returns the result. 
+                                    If the evaluation fails due to a dynamic error, the error 
+                                    is caught and the result is <i>false</i></p>
+                                 
+                                 <table>
+                                    <tr>
+                                       <h4>Parameters</h4>
+                                       <td class="paramName"><b>func</b></td>
+                                       <td></td>
+                                    </tr>
+                                 </table>
+                              </div>
+                              <hr />
+                              <div>
+                                 <h3>Description</h3><pre>
+    Helper functions   
+  </pre></div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Namespace</td>
+                        <td>http://eXolutio.com/oclX/functional</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Type</td>
+                        <td>item()*</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">References</div>
+                           <div class="flR"><input id="bt_refs_F_checkedS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('refs_F_checkedS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="refs_F_checkedS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Parameter</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#P_debugS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">debug</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Parameters</div>
+                           <div class="flR"><input id="bt_prs_F_checkedS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_F_checkedS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="prs_F_checkedS_oclX-functional.xsl" style="display:block">
+                              <table class="attsT">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th>Namespace</th>
+                                       <th>Type</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="fCol">func</td>
+                                    <td>No namespace</td>
+                                    <td>function() as item()*</td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Import precedence</td>
+                        <td>0</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Source</div>
+                           <div class="flR"><input id="bt_src_F_checkedS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('src_F_checkedS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="src_F_checkedS_oclX-functional.xsl" style="display:block">
+                              <table class="pWCont">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:checked"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"func"</span><span class="tAN"> as=</span><span class="tAV">"function() as item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:try</span><span class="tAN"> select=</span><span class="tAV">"$func()"</span><span class="tXSLEl">&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:catch</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:if</span><span class="tAN"> test=</span><span class="tAV">"$debug"</span><span class="tXSLEl">&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:message</span><span class="tAN"> select=</span><span class="tAV">"'Runtime error occured during execution making the result ''invalid''. '"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:message</span><span class="tAN"> select=</span><span class="tAV">"'  - code: ' || $err:code"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:message</span><span class="tAN"> select=</span><span class="tAV">"'  - description: ' || $err:description"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:message</span><span class="tAN"> select=</span><span class="tAV">"'  - value: ' || $err:value"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;/xsl:if&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"false()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:catch&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;/xsl:try&gt;</span><span class="tI">
+</span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lR"></td>
+         </tr>
+         <tr>
+            <td class="rt_cBL"></td>
+            <td class="rt_lB"></td>
+            <td class="rt_cBR"></td>
+         </tr>
+      </table><a id="F_oclIsInvalidS_oclX-functional.xsl"></a><div class="cmpT">Function
+         <span class="qname">oclX:oclIsInvalid (<span class="fParams">func</span>)</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cTL"></td>
+            <td class="rt_lT"></td>
+            <td class="rt_cTR"></td>
+         </tr>
+         <tr>
+            <td class="rt_lL"></td>
+            <td class="rt_cnt">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Documentation</div>
+                           <div class="flR"><input id="bt_dS_F_oclIsInvalidS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('dS_F_oclIsInvalidS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="dS_F_oclIsInvalidS_oclX-functional.xsl" style="display:block">
+                              <div>
+                                 <h3>Description</h3>
+                                 
+                                 <p>Returns <i>false</i> if <i>func</i> evaluates 
+                                    successfuly, <i>true</i> otherwise. The execution of this function never 
+                                    fails due to a dynamic error. 
+                                 </p>
+                                 
+                                 <table>
+                                    <tr>
+                                       <h4>Parameters</h4>
+                                       <td class="paramName"><b>func</b></td>
+                                       <td>Evaluated function.</td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Namespace</td>
+                        <td>http://eXolutio.com/oclX/functional</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Type</td>
+                        <td>xs:boolean</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Used by</div>
+                           <div class="flR"><input id="bt_uB_F_oclIsInvalidS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('uB_F_oclIsInvalidS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="uB_F_oclIsInvalidS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Function</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_oclIsValidS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:oclIsValid (</span><span class="fParams">func</span><span>)</span></a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">References</div>
+                           <div class="flR"><input id="bt_refs_F_oclIsInvalidS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('refs_F_oclIsInvalidS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="refs_F_oclIsInvalidS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Parameter</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#P_debugS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">debug</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Parameters</div>
+                           <div class="flR"><input id="bt_prs_F_oclIsInvalidS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_F_oclIsInvalidS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="prs_F_oclIsInvalidS_oclX-functional.xsl" style="display:block">
+                              <table class="attsT">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th>Namespace</th>
+                                       <th>Type</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="fCol">func</td>
+                                    <td>No namespace</td>
+                                    <td>function() as item()*</td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Import precedence</td>
+                        <td>0</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Source</div>
+                           <div class="flR"><input id="bt_src_F_oclIsInvalidS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('src_F_oclIsInvalidS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="src_F_oclIsInvalidS_oclX-functional.xsl" style="display:block">
+                              <table class="pWCont">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:oclIsInvalid"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tXSLEl">&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"func"</span><span class="tAN"> as=</span><span class="tAV">"function() as item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tC">&lt;!-- evaluate func and forget the result, return false if evaluation succeeds --&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:try</span><span class="tAN"> select=</span><span class="tAV">"let $result := $func() return false()"</span><span class="tXSLEl">&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:catch</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:if</span><span class="tAN"> test=</span><span class="tAV">"$debug"</span><span class="tXSLEl">&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:message</span><span class="tAN"> select=</span><span class="tAV">"'Runtime error occured during execution making the result ''invalid''. '"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:message</span><span class="tAN"> select=</span><span class="tAV">"'  - code: ' || $err:code"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:message</span><span class="tAN"> select=</span><span class="tAV">"'  - description: ' || $err:description"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+        </span><span class="tXSLEl">&lt;xsl:message</span><span class="tAN"> select=</span><span class="tAV">"'  - value: ' || $err:value"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;/xsl:if&gt;</span><span class="tI">
+      </span><span class="tC">&lt;!-- if function call fails, return true  --&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"true()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:catch&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;/xsl:try&gt;</span><span class="tI">
+</span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lR"></td>
+         </tr>
+         <tr>
+            <td class="rt_cBL"></td>
+            <td class="rt_lB"></td>
+            <td class="rt_cBR"></td>
+         </tr>
+      </table><a id="F_oclIsValidS_oclX-functional.xsl"></a><div class="cmpT">Function
+         <span class="qname">oclX:oclIsValid (<span class="fParams">func</span>)</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cTL"></td>
+            <td class="rt_lT"></td>
+            <td class="rt_cTR"></td>
+         </tr>
+         <tr>
+            <td class="rt_lL"></td>
+            <td class="rt_cnt">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Documentation</div>
+                           <div class="flR"><input id="bt_dS_F_oclIsValidS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('dS_F_oclIsValidS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="dS_F_oclIsValidS_oclX-functional.xsl" style="display:block">
+                              <div>
+                                 <h3>Description</h3>
+                                 
+                                 <p>Returns <i>true</i> if <i>func</i> evaluates 
+                                    successfuly, <i>false</i> otherwise. The execution of this function never 
+                                    fails due to a dynamic error. 
+                                 </p>
+                                 
+                                 <table>
+                                    <tr>
+                                       <h4>Parameters</h4>
+                                       <td class="paramName"><b>func</b></td>
+                                       <td>Evaluated function.</td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Namespace</td>
+                        <td>http://eXolutio.com/oclX/functional</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Type</td>
+                        <td>xs:boolean</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">References</div>
+                           <div class="flR"><input id="bt_refs_F_oclIsValidS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('refs_F_oclIsValidS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="refs_F_oclIsValidS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Function</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_oclIsInvalidS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclIsInvalid (</span><span class="fParams">func</span><span>)</span></a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Parameters</div>
+                           <div class="flR"><input id="bt_prs_F_oclIsValidS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_F_oclIsValidS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="prs_F_oclIsValidS_oclX-functional.xsl" style="display:block">
+                              <table class="attsT">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th>Namespace</th>
+                                       <th>Type</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="fCol">func</td>
+                                    <td>No namespace</td>
+                                    <td>function() as item()*</td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Import precedence</td>
+                        <td>0</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Source</div>
+                           <div class="flR"><input id="bt_src_F_oclIsValidS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('src_F_oclIsValidS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="src_F_oclIsValidS_oclX-functional.xsl" style="display:block">
+                              <table class="pWCont">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:oclIsValid"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tXSLEl">&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"func"</span><span class="tAN"> as=</span><span class="tAV">"function() as item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"not(oclX:oclIsInvalid($func))"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+</span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lR"></td>
+         </tr>
+         <tr>
+            <td class="rt_cBL"></td>
+            <td class="rt_lB"></td>
+            <td class="rt_cBR"></td>
+         </tr>
+      </table><a id="F_invalidS_oclX-functional.xsl"></a><div class="cmpT">Function
+         <span class="qname">oclX:invalid (<span class="fParams"></span>)</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cTL"></td>
+            <td class="rt_lT"></td>
+            <td class="rt_cTR"></td>
+         </tr>
+         <tr>
+            <td class="rt_lL"></td>
+            <td class="rt_cnt">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Documentation</div>
+                           <div class="flR"><input id="bt_dS_F_invalidS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('dS_F_invalidS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="dS_F_invalidS_oclX-functional.xsl" style="display:block">
+                              <div>
+                                 <h3>Description</h3>
+                                 
+                                 <p>Always results in dynamic error http://eXolutio.com/oclX/functional/error:E010.
+                                    The function is used to represent <i>invalid</i> literal from OCL. 
+                                 </p>
+                                 
+                                 <h4>Return</h4>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Namespace</td>
+                        <td>http://eXolutio.com/oclX/functional</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Type</td>
+                        <td>item()*</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">References</div>
+                           <div class="flR"><input id="bt_refs_F_invalidS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('refs_F_invalidS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="refs_F_invalidS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Variable</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#V_errorsS_oclX-functional.xsl" target="_self" title="No namespace" onclick="updPT('oclX-functional.xsl')">errors</a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Import precedence</td>
+                        <td>0</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Source</div>
+                           <div class="flR"><input id="bt_src_F_invalidS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('src_F_invalidS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="src_F_invalidS_oclX-functional.xsl" style="display:block">
+                              <table class="pWCont">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:invalid"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"error(QName('http://eXolutio.com/oclX/functional/error', 'oclError:E010'),        $errors[@xml:id='E010']/oclError:description/text())"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+</span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lR"></td>
+         </tr>
+         <tr>
+            <td class="rt_cBL"></td>
+            <td class="rt_lB"></td>
+            <td class="rt_cBR"></td>
+         </tr>
       </table><a id="F_functionItemCallS_oclX-functional.xsl"></a><div class="cmpT">Function
          <span class="qname">oclXin:functionItemCall (<span class="fParams">function, arity, indices, parameters</span>)</span></div>
       <table class="rt">
@@ -6199,11 +7512,6 @@
                                     </tr>
                                  </table>
                               </div>
-                              <hr />
-                              <div>
-                                 <h3>Description</h3><pre>
-    Helper functions   
-  </pre></div>
                            </div>
                         </td>
                      </tr>
@@ -6289,7 +7597,7 @@
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"arity"</span><span class="tAN"> as=</span><span class="tAV">"xs:integer"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"indices"</span><span class="tAN"> as=</span><span class="tAV">"xs:integer*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"parameters"</span><span class="tAN"> as=</span><span class="tAV">"item()*"</span><span class="tXSLEl">/&gt;</span><span class="tI">
-  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"if ($arity eq 1) then $function($parameters[$indices[1] + 1])       else if ($arity eq 2) then $function($parameters[$indices[1] + 1], $parameters[$indices[2] + 1])       else if ($arity eq 3) then $function($parameters[$indices[1] + 1], $parameters[$indices[2] + 1], $parameters[$indices[3] + 1])       else error(QName('http://eXolutio.com/oclX/functional/error', 'oclXer:E001'), 'A maximum of three different iterators are allowed. ')"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"if ($arity eq 1) then $function($parameters[$indices[1] + 1])       else if ($arity eq 2) then $function($parameters[$indices[1] + 1], $parameters[$indices[2] + 1])       else if ($arity eq 3) then $function($parameters[$indices[1] + 1], $parameters[$indices[2] + 1], $parameters[$indices[3] + 1])       else error(QName('http://eXolutio.com/oclX/functional/error', 'oclXer:E001'),                   $errors[@xml:id='E001']/oclError:description/text())"</span><span class="tXSLEl">/&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
                                  </tr>
                               </table>
@@ -6715,6 +8023,7 @@
                                     <td class="fCol">Functions</td>
                                     <td>
                                        <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_oclEqualS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:oclEqual (</span><span class="fParams">collection1, collection2</span><span>)</span></a><span class="refItemSep">;</span></div>
                                           <div class="refItemBlock"><a href="oclX-functional0.html#F_combined-containsS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional/internal" onclick="updPT('oclX-functional.xsl')"><span>oclXin:combined-contains (</span><span class="fParams">sequence, item</span><span>)</span></a><span class="refItemSep">;</span></div>
                                           <div class="refItemBlock"><a href="oclX-functional0.html#F_combined-first-index-ofS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional/internal" onclick="updPT('oclX-functional.xsl')"><span>oclXin:combined-first-index-of (</span><span class="fParams">sequence, item</span><span>)</span></a></div>
                                        </div>
@@ -6782,6 +8091,139 @@
     </span><span class="tXSLEl">&lt;/xsl:when&gt;</span><span class="tI">
     </span><span class="tXSLEl">&lt;xsl:otherwise</span><span class="tXSLEl">&gt;</span><span class="tI">
       </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"deep-equal($item1, $item2)"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:otherwise&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;/xsl:choose&gt;</span><span class="tI">
+</span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lR"></td>
+         </tr>
+         <tr>
+            <td class="rt_cBL"></td>
+            <td class="rt_lB"></td>
+            <td class="rt_cBR"></td>
+         </tr>
+      </table><a id="F_oclEqualS_oclX-functional.xsl"></a><div class="cmpT">Function
+         <span class="qname">oclX:oclEqual (<span class="fParams">collection1, collection2</span>)</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cTL"></td>
+            <td class="rt_lT"></td>
+            <td class="rt_cTR"></td>
+         </tr>
+         <tr>
+            <td class="rt_lL"></td>
+            <td class="rt_cnt">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="fCol">Namespace</td>
+                        <td>http://eXolutio.com/oclX/functional</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Type</td>
+                        <td>xs:boolean</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Used by</div>
+                           <div class="flR"><input id="bt_uB_F_oclEqualS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('uB_F_oclEqualS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="uB_F_oclEqualS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Function</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_seqEqualS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional" onclick="updPT('oclX-functional.xsl')"><span>oclX:seqEqual (</span><span class="fParams">collection1, collection2</span><span>)</span></a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">References</div>
+                           <div class="flR"><input id="bt_refs_F_oclEqualS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('refs_F_oclEqualS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="refs_F_oclEqualS_oclX-functional.xsl" style="display:block">
+                              <table class="uBT">
+                                 <tr>
+                                    <td class="fCol">Function</td>
+                                    <td>
+                                       <div class="listGrouping">
+                                          <div class="refItemBlock"><a href="oclX-functional0.html#F_combined-eqS_oclX-functional.xsl" target="_self" title="http://eXolutio.com/oclX/functional/internal" onclick="updPT('oclX-functional.xsl')"><span>combined-eq (</span><span class="fParams">item1, item2</span><span>)</span></a></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Parameters</div>
+                           <div class="flR"><input id="bt_prs_F_oclEqualS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('prs_F_oclEqualS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="prs_F_oclEqualS_oclX-functional.xsl" style="display:block">
+                              <table class="attsT">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th>Namespace</th>
+                                       <th>Type</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="fCol">collection1</td>
+                                    <td>No namespace</td>
+                                    <td>item()?</td>
+                                 </tr>
+                                 <tr>
+                                    <td class="fCol">collection2</td>
+                                    <td>No namespace</td>
+                                    <td>item()?</td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">Import precedence</td>
+                        <td>0</td>
+                     </tr>
+                     <tr>
+                        <td class="fCol">
+                           <div class="flL">Source</div>
+                           <div class="flR"><input id="bt_src_F_oclEqualS_oclX-functional.xsl" type="image" src="img/btM.gif" value="-" onclick="switchState('src_F_oclEqualS_oclX-functional.xsl');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="src_F_oclEqualS_oclX-functional.xsl" style="display:block">
+                              <table class="pWCont">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tXSLEl">&lt;xsl:function</span><span class="tAN"> name=</span><span class="tAV">"oclX:oclEqual"</span><span class="tAN"> as=</span><span class="tAV">"xs:boolean"</span><span class="tXSLEl">&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection1"</span><span class="tAN"> as=</span><span class="tAV">"item()?"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:param</span><span class="tAN"> name=</span><span class="tAV">"collection2"</span><span class="tAN"> as=</span><span class="tAV">"item()?"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+  </span><span class="tXSLEl">&lt;xsl:choose</span><span class="tXSLEl">&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:when</span><span class="tAN"> test=</span><span class="tAV">"count($collection1) eq 0 and count($collection2) eq 0"</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"true()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:when&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:when</span><span class="tAN"> test=</span><span class="tAV">"count($collection1) ne count($collection2)"</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"false()"</span><span class="tXSLEl">/&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;/xsl:when&gt;</span><span class="tI">
+    </span><span class="tXSLEl">&lt;xsl:otherwise</span><span class="tXSLEl">&gt;</span><span class="tI">
+      </span><span class="tXSLEl">&lt;xsl:sequence</span><span class="tAN"> select=</span><span class="tAV">"every $index in 1 to count($collection1) satisfies            oclXin:combined-eq($collection1[$index], $collection2[$index])"</span><span class="tXSLEl">/&gt;</span><span class="tI">
     </span><span class="tXSLEl">&lt;/xsl:otherwise&gt;</span><span class="tI">
   </span><span class="tXSLEl">&lt;/xsl:choose&gt;</span><span class="tI">
 </span><span class="tXSLEl">&lt;/xsl:function&gt;</span></pre></td>
