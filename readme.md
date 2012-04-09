@@ -22,4 +22,6 @@ Functional version was tested with Saxon 9.4, but should work with any XSLT 3.0 
 
 You can choose which version to use in validation by setting the corresponding option in oclx-schematron-pipeline.xpl. As an alternative to XProc, you can use the batch file, providing that your XSLT processor supports command line interface. You may have to modify the paths in the batch file to refer to your XSLT processor executable and check, whether the notation for arguments is correct (the batch file uses notation used by Saxon).  
 
-You can look into Examples to see some examples of Schematron schemas that can be validated using OclX. The examples use functional version and you can test both schema-aware and non-schema-aware processing. In Calabash (see http://xmlcalabash.com/), schema-aware processing is triggered automatically, when the input document is provided with a schema. Note: in Saxon, schema-aware processing is supported only in Enterprise Edition. 
+If you are using functional version and XML Calabash as your XProc processor, be sure to use its up-to-date version, older versions did not support XSLT 3.0.
+
+You can look into Examples to see some examples of Schematron schemas that can be validated using OclX. The examples use functional version and you can test both schema-aware and non-schema-aware processing. In XML Calabash (see http://xmlcalabash.com/), schema-aware processing is triggered automatically, when the input document is provided with a schema. Note: in Saxon, schema-aware processing is supported only in Enterprise Edition. 
